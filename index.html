@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <title>Github Jobs</title>
+</head>
+<body class="bg-gray-200">
+
+  <h1 class="mt-10 text-center text-4xl font-bold">Github Jobs Finder</h1>
+
+  <form id="form" class="bg-teal-500 max-w-lg mx-auto mt-10 rounded p-6">
+          <div>
+              <input 
+                  type="text" 
+                  class="w-full p-3 rounded placeholder-gray-900 "
+                  id="search"
+                  placeholder="Search: Node.js Java o C#"
+              >
+
+              <input 
+                  type="submit"
+                  value="Search Jobs"
+                  class="bg-gray-800 text-white font-bold w-full uppercase  mt-5 p-3 hover:bg-gray-700 cursor-pointer"
+              >
+
+          </div>
+  </form>
+
+  <div id="result" class="mt-10 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+  
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="./js/app.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  
+  
+</body>
+</html>
